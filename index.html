@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Discount calculator</h1>
+        <form>
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" placeholder="Write the price of the product" pattern="^\d+(\.\d{1,2})?$" required><br>
+            <label for="discount">Discount</label>
+            <input type="text" name="discount" id="discount" pattern="^(100|[1-9]?[0-9])$" title="Write the discount (without %)" placeholder="Write the product's discount" required><br>
+            <button type="button" onclick="calculate(event)">Calculate</button>
+        </form>
+        <div id="answer"></div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
